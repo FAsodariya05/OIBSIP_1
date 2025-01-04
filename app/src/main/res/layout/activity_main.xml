@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#ECECEC">
+    <!-- Display Section -->
+
+    <!-- Keypad Section -->
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:background="#575656"
+        android:ellipsize="end"
+        android:gravity="end|center_vertical"
+        android:padding="17dp"
+        android:singleLine="true"
+        android:text="@string/_0"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"  android:layout_height="35dp"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#F5F5F5"
+        android:columnCount="4"
+        android:padding="5dp"
+        android:rowCount="5">
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/btn7"
+            style="@style/KeypadButton"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="#000000"
+            android:backgroundTint="#000000"
+            android:text="@string/_7"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/KeypadButton"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="#020202"
+            android:text="@string/_8"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/KeypadButton"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:background="#020202"
+            android:text="@string/_9"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnDivide"
+            style="@style/KeypadButton"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:background="#020202"
+            android:text="@string/Div"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/KeypadButton"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:background="#020202"
+            android:text="@string/_4"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/KeypadButton"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:background="#020202"
+            android:text="@string/_5"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/KeypadButton"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:background="#020202"
+            android:text="@string/_6"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            style="@style/KeypadButton"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:background="#020202"
+            android:text="@string/Mul"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/KeypadButton"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:background="#020202"
+            android:text="@string/_1"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/KeypadButton"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:background="#020202"
+            android:text="@string/_2"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/KeypadButton"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:background="#020202"
+            android:text="@string/_3"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnSubtract"
+            style="@style/KeypadButton"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:background="#020202"
+            android:text="@string/Sub"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/KeypadButton"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:background="#020202"
+            android:text="@string/ac"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn0"
+            style="@style/KeypadButton"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:background="#000000"
+            android:text="@string/_0"
+            android:textColor="#FFFFFF"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/btnDot"
+            style="@style/KeypadButton"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:background="#000000"
+            android:text="@string/Dot"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/KeypadButton"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:background="#000000"
+            android:text="@string/Add"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnEquals"
+            style="@style/KeypadButton"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:layout_columnSpan="2"
+            android:background="#000000"
+            android:text="@string/_EQ"
+            android:textColor="#FFFFFF"
+            tools:ignore="VisualLintBounds" />
+    </GridLayout>
+</LinearLayout>
